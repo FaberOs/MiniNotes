@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+
+#root {
+  font-family: "Nunito", sans-serif;
+  margin: 0 auto;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  transition: scrollbar-color 0.8s ease-in-out;
+}
+
+*:hover {
+  scrollbar-color: rgba(100, 100, 100, 0.5) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  min-width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 0;
+  transition: background-color 0.8s ease-in-out;
+}
+
+*:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 100, 100, 0.3);
+}
