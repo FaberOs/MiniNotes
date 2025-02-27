@@ -33,3 +33,40 @@
 *:hover::-webkit-scrollbar-thumb {
   background-color: rgba(100, 100, 100, 0.3);
 }
+
+#layout {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+}
+
+#sidebar {
+  grid-area: sidebar;
+}
+
+#header {
+  grid-area: header;
+}
+
+#main {
+  grid-area: main;
+  overflow-y: auto;
+}
+
+@media (min-width: 768px) {
+  #layout {
+    grid-template-areas:
+      "sidebar header"
+      "sidebar main";
+    grid-template-columns: 5rem 1fr;
+  }
+
+  #sidebar {
+    display: block;
+    grid-area: sidebar;
+  }
+}

@@ -30,7 +30,7 @@ const Sidebar: React.FC = () => {
   };
 
   return (
-    <div className="fixed left-0 top-0 h-full w-20 min-w-[5rem] bg-neutral-50 dark:bg-neutral-700 border-r-2 border-neutral-200 dark:border-neutral-800 flex flex-col items-center py-8 shadow-md shadow-neutral-300 dark:shadow-neutral-600">
+    <div className="hidden md:fixed md:left-0 md:top-0 md:h-full md:w-20 md:min-w-[5rem] md:bg-neutral-50 md:dark:bg-neutral-700 md:border-r-2 md:border-neutral-200 md:dark:border-neutral-800 md:flex md:flex-col md:items-center md:py-8 md:shadow-md md:shadow-neutral-300 md:dark:shadow-neutral-600">
       <h1 className="font-bold text-md mb-10 leading-none text-gray-800 dark:text-neutral-100">
         Mini <br /> Notes
       </h1>

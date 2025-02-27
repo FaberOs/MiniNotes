@@ -1,6 +1,7 @@
 import React from "react";
 import Sidebar from "../components/Sidebar";
 import Header from "../components/Header";
+import FloatingButton from "../components/FloatingButton";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -8,14 +9,15 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className="grid grid-cols-[5rem,1fr] grid-rows-[auto,1fr] h-screen">
-      <div className="col-span-1 row-span-2">
+    <div id="layout">
+      <div id="sidebar">
         <Sidebar />
       </div>
-      <div className="col-start-2 row-start-1">
+      <div id="header">
         <Header />
       </div>
-      <main className="col-start-2 row-start-2 overflow-auto ">{children}</main>
+      <main id="main">{children}</main>
+      <FloatingButton />
     </div>
   );
 };
